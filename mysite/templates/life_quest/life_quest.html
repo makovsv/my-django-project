@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset = "UTF-8">
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet"> <!-- шрифт Робото -->
+
+  <!-- Custom styles-->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Ulleum</a>
+      </div>
+
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">поток</a></li>
+          <li><a href="#">life</a></li>
+          <li><a href="#">do</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container top-container_test">
+    <div class="row">
+      <form>
+
+      <h1 class="display1_test">Tell us about yourself</h2>
+
+        <div class="form-group row">
+          <label for="InputName2" class="col-sm-4 col-form-label">Your name:</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="InputName2" placeholder="Ваше имя">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="InputYear2" class="col-sm-4 col-form-label">Your birth year:</label>
+          <div class="col-sm-5">
+            <input type="date" class="form-control" id="InputName2">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="GenderMale" id="GenderMale1" value="optionMale">
+            <label class="form-check-label">Мужской</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="GenderMale" id="GenderFemale1" value="optionFemale">
+            <label class="form-check-label">Женский</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-primary_test">отправить</button>
+
+
+      </form>
+    </div>
+  </div>
+
+</body>

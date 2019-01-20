@@ -4,6 +4,16 @@ html, body{
   font-family: 'Roboto', sans-serif;
 }
 
+.div_color_test{
+  background-color: #00CCFF;
+}
+
+.form-container2 form{
+  background-color: #dc5129;
+  height: 100%;
+  margin-top: 90px;
+}
+
 .top-container{
   padding-top: 10%;
 }
@@ -37,4 +47,31 @@ html, body{
 .orange-btn:hover{
   background-color: #dc5129;
   border: none;
+}
+
+.top-container_test{
+  margin-top: 20%;
+  width: 30%;
+  background-color: #cecccc;
+  border-radius: 25px;
+}
+
+.top-container_test form label{
+  display:inline-block;
+  text-align: right;
+}
+
+.top-container_test form input{
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+.display1_test{
+  text-align: center;
+}
+
+.btn-primary_test{
+  align-items: center;
+  margin-left: 40%;
+  margin-bottom: 5%;
 }
