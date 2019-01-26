@@ -5,4 +5,5 @@ class LifeProfileForm(forms.ModelForm):
 
     class Meta:
         model = LifeProfile
-        exclude = [""]
+        fields = ['myusername']
+        #exclude = [""]

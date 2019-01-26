@@ -38,38 +38,37 @@
 
   <div class="container top-container_test">
     <div class="row">
-      <form>
+    <form action="" method="post">{% csrf_token %}
 
       <h1 class="display1_test">Tell us about yourself</h2>
 
         <div class="form-group row">
           <label for="InputName2" class="col-sm-4 col-form-label">Your name:</label>
           <div class="col-sm-5">
-            <input type="text" class="form-control" id="InputName2" placeholder="Ваше имя">
+            <input type="text" class="form-control" placeholder="Ваше имя" name = {{ form.myusername.name }}>
           </div>
         </div>
 
         <div class="form-group row">
           <label for="InputYear2" class="col-sm-4 col-form-label">Your birth year:</label>
           <div class="col-sm-5">
-            <input type="date" class="form-control" id="InputName2">
+            <input type="date" class="form-control" name = {{ form.birth_year.name }}>
           </div>
         </div>
 
         <div class="form-group row">
-          <div class="form-check form-check-inline">
+          <label class="col-sm-4 col-form-label">Your gender:</label>
+          <div class="form-check form-check-inline col-sm-offset-4">
             <input type="radio" class="form-check-input" name="GenderMale" id="GenderMale1" value="optionMale">
             <label class="form-check-label">Мужской</label>
-          </div>
-
-          <div class="form-check form-check-inline">
             <input type="radio" class="form-check-input" name="GenderMale" id="GenderFemale1" value="optionFemale">
             <label class="form-check-label">Женский</label>
           </div>
-        </div>
+
+          <div class="form-group row">
+          </div>
 
         <button type="submit" class="btn btn-primary btn-primary_test">отправить</button>
-
 
       </form>
     </div>
