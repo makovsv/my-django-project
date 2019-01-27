@@ -5,7 +5,7 @@ class LifeProfileAdmin (admin.ModelAdmin):
     #list_display = [field.name for field in Subscriber._meta.fields]
     # list_filter = ('name',)
     # search_fields = ['name', 'email']
-    fields = ["myusername"]
+    fields = ["myusername","birth_year","gender", "calc_result"]
     # exclude = ["email"]
 
     class Meta:
